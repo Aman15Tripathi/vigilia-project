@@ -19,22 +19,31 @@ connectCloudinary()
 
 // app.use(cors())
 
-const allowedOrigins = [
-    "http://localhost:5173",
-    "http://localhost:5174"
-];
+// const allowedOrigins = [
+//     "http://localhost:5173",
+//     "http://localhost:5174"
+// ];
+
+// app.use(cors({
+//     origin: function (origin, callback) {
+//         if (!origin || allowedOrigins.includes(origin)) {
+//             callback(null, true);
+//         } else {
+//             callback(new Error("CORS not allowed"));
+//         }
+//     },
+//     credentials: true
+// }));
 
 app.use(cors({
-    origin: function (origin, callback) {
-        if (!origin || allowedOrigins.includes(origin)) {
-            callback(null, true);
-        } else {
-            callback(new Error("CORS not allowed"));
-        }
-    },
-    credentials: true
+  origin: [
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://vigilia-project-9wo8.vercel.app",
+    "https://your-admin.vercel.app"
+  ],
+  credentials: true
 }));
-
 app.use(express.json())
 
 // api endpoints 
