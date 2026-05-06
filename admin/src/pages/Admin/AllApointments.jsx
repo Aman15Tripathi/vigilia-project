@@ -2,7 +2,6 @@ import React from 'react'
 import { useContext } from 'react'
 import { AdminContext } from '../../context/AdminContext'
 import { useEffect } from 'react'
-import { div } from 'three/tsl'
 import { AppContext } from '../../context/AppContext'
 import { assets } from '../../assets/assets'
 
