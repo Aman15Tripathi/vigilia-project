@@ -40,7 +40,7 @@ app.use(cors({
     "http://localhost:5173",
     "http://localhost:5174",
     "https://vigilia-project-9wo8.vercel.app",
-    "https://your-admin.vercel.app"
+    "https://vigilia-project-kskh.vercel.app"
   ],
   credentials: true
 }));
